@@ -27,7 +27,7 @@ export default function Header() {
  
 <nav       className={` w-full `}  >
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-2 p-4">
-  <a href="/" class="flex items-center">
+  <a href="/my-portfolio" class="flex items-center">
 <img src={LOGO} className="w-12   "   alt="" />  </a>
  
 
