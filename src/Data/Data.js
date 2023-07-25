@@ -40,56 +40,56 @@ export const EducationData =[{
 
 export const competencesDev =[{
    id:1,
-   Nom:'Java (SPRING BOOT)',
+   Nom:'Java (SPRING)/C',
    pourcentage:70,
-   icon:                <FaJava class="w-8 h-8 text-purple-600" />
+   icon:                <FaJava class="w-8 h-8 text-purple-60  dark:text-white" />
 
 },{
     id:2,
-    Nom:'PHP',
+    Nom:'PHP/C++',
     pourcentage:45,
-    icon:                <FaPhp class="w-8 h-8 text-purple-600" />
+    icon:                <FaPhp class="w-8 h-8 text-purple-600  dark:text-white" />
  
  },{
     id:3,
     Nom:'HTML CSS JS',
     pourcentage:80,
     icon:  <>
-    <FaHtml5 class="w-8 h-8 text-purple-600" />
+    <FaHtml5 class="w-8 h-8 text-purple-60  dark:text-white" />
     
     </>
  },{
     id:4,
     Nom:'BOOTSTRAP, TAILWIND CSS',
     pourcentage:75,
-    icon:             <FaBootstrap  class="w-8 h-8 text-purple-600" /> 
+    icon:             <FaBootstrap  class="w-8 h-8 text-purple-60  dark:text-white" /> 
 
  },{
     id:5,
     Nom:'REACT JS, REACT NATIVE',
     pourcentage:75,
-    icon:               <FaReact class="w-8 h-8 text-purple-600" /> 
+    icon:               <FaReact class="w-8 h-8 text-purple-60  dark:text-white" /> 
  
  },
  {
     id:6,
-    Nom:'Nodejs',
+    Nom:'Nodejs/ExpressJS',
     pourcentage:80,
-    icon:     <FaNodeJs class="w-8 h-8 text-purple-600" />
+    icon:     <FaNodeJs class="w-8 h-8 text-purple-60  dark:text-white" />
 
  },
  {
     id:7,
     Nom:'MongoDB',
     pourcentage:75,
-    icon:                <BiLogoMongodb class="w-8 h-8 text-purple-600" />
+    icon:                <BiLogoMongodb class="w-8 h-8 text-purple-60  dark:text-white" />
 
  },
  {
     id:8,
     Nom:'MYSQL, ORACLE',
     pourcentage:75,
-    icon:                <BiData class="w-8 h-8 text-purple-600" />
+    icon:                <BiData class="w-8 h-8 text-purple-60  dark:text-white" />
  
  },
 ] 
@@ -106,6 +106,31 @@ export const competencesGestion =[{
   }
  ] 
 
+ export const competencesLinguestique =[{
+   id:1,
+   Nom:'Kabyle',
+   pourcentage:"Maîtrise (Langue Matérnelle) ",
+   
+},{
+    id:2,
+    Nom:'Arabe',
+    pourcentage:"Maîtrise",
+    
+ }
+ ,{
+   id:3,
+   Nom:'Français',
+   pourcentage:"Intermédiaire Avancé/B2 TCF 2021",
+   
+}
+
+,{
+   id:4,
+   Nom:'Anglais',
+   pourcentage:"Intermédiaire ",
+   
+}
+] 
  //projets donnees 
 
  export const ProjectData =[

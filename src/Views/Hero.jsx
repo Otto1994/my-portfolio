@@ -8,28 +8,41 @@ export default function Hero() {
       className="flex justify-center items-center h-full p-12"
       >
       <div class="lg:flex ">
-        <div class="flex items-center justify-center w-full px-6 py-5 p-3    lg:w-1/2">
+        <div class="flex items-center justify-center w-full     lg:w-1/2">
           <div
           
       data-aos="fade-left"
       data-aos-offset='100'
-          class="max-w-xl">
-            <h2 class="text-xl font-semibold text-left text-gray-800 dark:text-white lg:text-3xl">
+          class="max-w-5xl">
+            <h2 class="text-md font-semibold text-left text-gray-800 uppercase dark:text-white lg:text-3xl mb-6">
               {" "}
-              Salut ! Je suis
-              <span class="text-blue-600 uppercase mx-2 dark:text-blue-400">
+               Bienvenue sur mon portfolio   </h2>
+
+ <h2 class="text-xl font-semibold text-left text-gray-800 dark:text-white lg:text-4xl">
+ Je suis <span class="text-blue-600 uppercase mx-2 dark:text-blue-400">
               Zakaria Braham 
               </span>
-            </h2>
+           </h2>
+              
+         
 
-            <p class="mt-4 text-sm text-gray-500 text-justify dark:text-gray-400 lg:text-base">
-              Je suis un développeur web junior passionné par la création
-              d'applications et de sites web innovants. Avec un bagage
-              académique solide comprenant un diplôme de master en génie
-              logiciel et une licence en systèmes informatiques, je suis prêt à
-              relever tous les défis qui se présentent à moi..
-            </p>
-<h1 className="text-xl text-blue-600 font-light uppercase mt-5">Contactez-moi sur</h1>
+            <p class="mt-4 text-sm text-gray-500 text-justify dark:text-gray-400 lg:text-md">
+           
+ Un développeur logiciel junior passionné par le développement d'applications informatique ,Ce 
+domaine me passionne, car il me permet de résoudre des problèmes technologiques. Je 
+suis attiré par la polyvalence de ce domaine, qui offre chaque jour de nouveaux défis et de 
+nouvelles technologies à explorer. Je suis prêt à relever tous les défis qui se présentent à moi.
+  
+           
+           </p>
+           <p class="mt-4 text-sm text-gray-500 text-justify dark:text-gray-400 lg:text-md">
+           
+           N'hésitez pas à explorer mes réalisations, et à me contacter pour toute proposition de collaboration ou pour discuter de projets passionnants.
+Merci de visiter mon portfolio, et j'espère que vous apprécierez parcourir mes créations autant que j'ai pris plaisir à les réaliser !
+                     </p>
+                     
+<h1 className="text-xl  text-blue-600 font-light uppercase mt-5 dark:text-blue-400 ">  
+Contactez-moi sur</h1>
             <ul class="flex justify-center items-center  mt-5 space-x-5">
               <li>
                 <a
@@ -137,10 +150,9 @@ export default function Hero() {
                 </a>
               </li>
             </ul>
-            <div class="flex flex-col mt-6 items-center justify-center space-y-3 lg:space-y-0 lg:flex-row">
-              <a
-                href="https://drive.google.com/file/d/1RxPoC765c5NlvYB8Ks89tttMinwdVMH8/view?usp=sharing"
-                class=" px-5 py-2 items-center text-sm font-medium tracking-wider text-center text-white transition-colors duration-300 transform bg-blue-600 rounded-md uppercase flex hover:bg-blue-700"
+            <div class="flex flex-col mt-6 mb-6 items-center justify-center space-y-3 lg:space-y-0 lg:flex-row">
+            <span class="animate-ping left-32  absolute inline-flex h-8 w-8 rounded-full bg-blue-600 opacity-75"></span> <a
+href="https://drive.google.com/file/d/1pOsZN7lwhcfRoIORbN4AWDVZfxaUiYvR/view?usp=sharing"                class=" py-2 px-5 items-center text-sm font-medium tracking-wider text-center text-white transition-colors duration-300 transform bg-blue-600 rounded-md uppercase flex hover:bg-blue-700"
               >
                 Télécharger mon CV <MdDownload size={20} />
               </a>
@@ -151,10 +163,10 @@ export default function Hero() {
         <div class="w-full  lg:w-1/2 lg:h-auto "  data-aos="fade-right"
       data-aos-offset='100'
   >
-          <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex justify-center mt-2 items-center">
             <img
-              src="https://res.cloudinary.com/digybqksh/image/upload/v1688682867/haxc7ue9qh3iruj41oy1.jpg "
-              className="w-2/4 rounded-xl  shadow"
+              src="https://res.cloudinary.com/digybqksh/image/upload/v1690206403/Picture_W-BG_qua7dv.png "
+              className="w-3/4 lg:w-2/4 rounded-t-[2500px] rounded-b-[9999px] bg-[#0033CC]  shadow"
               alt=""
             />
           </div>

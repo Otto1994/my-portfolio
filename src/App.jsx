@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/NavBar";
@@ -16,11 +16,10 @@ import { IconButton, Tooltip } from "@material-tailwind/react";
 import Education from "./Views/Education";
 import Hero from "./Views/Hero";
 import Projects from "./Views/Projects";
-import Feature from "./Views/Feature";
 import Competences from "./Views/Competences";
-import Slider from "./components/Carousel";
 
 function ScrollRestoration() {
+
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -30,6 +29,8 @@ function ScrollRestoration() {
   return null;
 }
 function App() {
+  const [darkmode, setDarkmode] = React.useState(false);
+
   Aos.init({
     duration: 1000,
     offset: 100,
@@ -47,7 +48,7 @@ function App() {
     }
   };
   return (
-    <div className="App">
+    <div className="App bg-white dark:bg-gray-900">
       {isActive ? (
         <div class="flex w-8  items-center justify-center flex-col fixed z-10 bottom-4 right-4 overflow-hidden bg-white border divide-x rounded-lg  dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700">
           <Tooltip content="Accueil" placement="left" className="bg-dark ">
@@ -56,7 +57,7 @@ function App() {
               className="hover:bg-gray-600 "
               onClick={() => scrollToSection("top")}
             >
-              <MdKeyboardArrowUp className="text-dark " size={25} />
+              <MdKeyboardArrowUp className="text-[#0033CC] dark:text-white  " size={25} />
             </IconButton>
           </Tooltip>
           <Tooltip content="Education" placement="left" className="bg-dark ">
@@ -65,7 +66,7 @@ function App() {
               className="hover:bg-gray-600 "
               onClick={() => scrollToSection("Education")}
             >
-              <MdSchool className="text-dark  " size={25} />
+              <MdSchool className="text-[#0033CC] dark:text-white  " size={25} />
             </IconButton>
           </Tooltip>
           <Tooltip content="Compétences" placement="left" className="bg-dark ">
@@ -74,7 +75,7 @@ function App() {
               className="hover:bg-gray-600 "
               onClick={() => scrollToSection("Compétences")}
             >
-              <MdSettingsSuggest className="text-dark  " size={25} />
+              <MdSettingsSuggest className="text-[#0033CC] dark:text-white  " size={25} />
             </IconButton>
           </Tooltip>
           <Tooltip content="Projets" placement="left" className="bg-dark ">
@@ -83,7 +84,7 @@ function App() {
               className="hover:bg-gray-600 "
               onClick={() => scrollToSection("Projects")}
             >
-              <FaProjectDiagram className="text-dark  " size={25} />
+              <FaProjectDiagram className="text-[#0033CC] dark:text-white  " size={25} />
             </IconButton>
           </Tooltip>
        
@@ -92,14 +93,14 @@ function App() {
       ) : null}
       <ScrollRestoration />
 
-      <Header />
+      <Header setDarkmode={setDarkmode} darkmode={darkmode} />
       <Hero />
       <Education />
       <Competences />
       <Projects />
-      {/* <Slider /> */}
+ 
 
-      <Footer />
+      <Footer setDarkmode={setDarkmode} darkmode={darkmode} />
     </div>
   );
 }

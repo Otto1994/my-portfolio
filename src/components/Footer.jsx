@@ -1,7 +1,8 @@
 import React from 'react'
 import LOGO from "../IMG/LOGO.svg";
+import LOGODark from "../IMG/LogoLight.svg";
 
-const Footer = () => {
+const Footer = ( {darkmode}) => {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -13,25 +14,26 @@ const Footer = () => {
 <footer class="bg-white dark:bg-gray-900 border-t">
     <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col items-center text-center">
-            <a href="#">
-                <img class="w-auto h-12" src={LOGO} alt=""/>
+            <a href="/my-portfolio">
+                <img class="w-auto h-12" src={!darkmode? LOGO
+  :LOGODark}  alt=""/>
             </a>
 
             <div class="flex flex-wrap justify-center mt-6 -mx-4">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg  md:flex-row md:space-x-8 md:mt-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg  md:flex-row md:space-x-8 md:mt-0   md:dark:bg-gray-900 dark:border-gray-700">
    
    <li>
-     <a onClick={() => scrollToSection("top")} class="block  cursor-pointer py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Accueil</a>
+     <span onClick={() => scrollToSection("top")} class="block  cursor-pointer py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Accueil</span>
    </li>
    <li>
-     <a onClick={() => scrollToSection("Education")} class="block cursor-pointer py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Education</a>
+     <span onClick={() => scrollToSection("Education")} class="block cursor-pointer py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Education</span>
    </li>
    <li>
-     <a               onClick={() => scrollToSection("Compétences")}
-class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Compétences</a>
+     <span               onClick={() => scrollToSection("Compétences")}
+class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Compétences</span>
    </li>
    <li>
-     <a  onClick={() => scrollToSection("Projects")}  class="block py-2 pl-3 pr-4 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</a>
+     <span  onClick={() => scrollToSection("Projects")}  class="block py-2 pl-3 pr-4 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</span>
    </li>
  </ul>
             </div>
@@ -46,7 +48,7 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
             <div class="flex mt-2 -mx-2">
             <ul class="flex justify-center items-center   space-x-5">
               <li>
-                <a
+                <span
                   href="https://facebook.com/otto1994"
                   class="text-gray-500 hover:text-blue-600 dark:hover:text-white dark:text-gray-400"
                 >
@@ -62,10 +64,10 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </a>
+                </span>
               </li>
               <li>
-                <a
+                <span
                   href="https://instagram.com/zakaria.bram"
                   class="text-gray-500 hover:text-blue-600 dark:hover:text-white dark:text-gray-400"
                 >
@@ -81,10 +83,10 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </a>
+                </span>
               </li>
               <li>
-                <a
+                <span
                   href="https://www.linkedin.com/in/zakaria-braham-b852a1265"
                   class=" text-gray-500 hover:text-blue-600 dark:hover:text-white dark:text-gray-400"
                 >
@@ -98,10 +100,10 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
                       d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
                     ></path>
                   </svg>
-                </a>
+                </span>
               </li>
               <li>
-                <a
+                <span
                   href="https://github.com/Otto1994"
                   class="text-gray-500 hover:text-blue-600 dark:hover:text-white dark:text-gray-400"
                 >
@@ -117,10 +119,10 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </a>
+                </span>
               </li>
               <li>
-                <a
+                <span
                   href="https://t.me/Otto94i"
                   class="text-gray-500 hover:text-blue-600 dark:hover:text-white dark:text-gray-400"
                 >
@@ -132,10 +134,10 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
                   >
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
                   </svg>
-                </a>
+                </span>
               </li>
               <li>
-                <a
+                <span
                   href="mailto:zakaria.braham@outlook.com"
                   class="text-gray-500 hover:text-blue-600 dark:hover:text-white dark:text-gray-400"
                 >
@@ -148,7 +150,7 @@ class="block py-2 pl-3 pr-4 text-gray-900 rounded cursor-pointer hover:bg-gray-1
                     <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
                     <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
                   </svg>
-                </a>
+                </span>
               </li>
             </ul>
             </div>
